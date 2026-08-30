@@ -4,6 +4,17 @@ on:
   schedule:
     - cron: "30 3 * * *"
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "scripts/**"
+      - "assets/skills.json"
+      - "assets/projects.json"
+      - ".github/workflows/charts-and-cards.yml"
+
+concurrency:
+  group: charts-and-cards
+  cancel-in-progress: true
 
 jobs:
   build:
@@ -25,6 +36,11 @@ jobs:
           python scripts/radar.py --github ${{ github.repository_owner }} -o assets/radar-langs \
             --limit 7 --values --curve 0.4 \
             --exclude "shell,makefile,dockerfile,batchfile,procfile"
+        env:
+          GITHUB_TOKEN: ${{ secrets.METRICS_TOKEN || secrets.GITHUB_TOKEN }}
+
+      - name: Draw isometric contribution calendar
+        run: python scripts/isocal.py --user ${{ github.repository_owner }} -o assets/isocal
         env:
           GITHUB_TOKEN: ${{ secrets.METRICS_TOKEN || secrets.GITHUB_TOKEN }}
 

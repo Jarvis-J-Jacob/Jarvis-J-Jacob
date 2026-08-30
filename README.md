@@ -58,18 +58,20 @@ One I rated myself. The other counts real language bytes across my public repos 
 ## the year, and a snake that ate it
 
 <picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/isocal-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/isocal-light.svg">
+  <img src="assets/isocal-dark.svg" width="100%" alt="isometric contribution calendar, last 12 months">
+</picture>
+
+<br><br>
+
+<picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Jarvis-J-Jacob/Jarvis-J-Jacob/output/snake-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Jarvis-J-Jacob/Jarvis-J-Jacob/output/snake-light.svg">
   <img src="https://raw.githubusercontent.com/Jarvis-J-Jacob/Jarvis-J-Jacob/output/snake-dark.svg" width="100%" alt="contribution snake">
 </picture>
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/metrics.plugin.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/metrics.plugin.svg">
-  <img src="assets/metrics.plugin.svg" width="100%" alt="isometric contribution calendar and language mix">
-</picture>
-
-<sub>the snake builds itself on every push to <code>main</code> (and twice daily); the metrics panel needs the <code>METRICS_TOKEN</code> secret before its workflow can run. Both 404 until then — expected on day one, not a bug.</sub>
+<sub>both self-drawn from GitHub's own data, no third-party server: the calendar by <code>scripts/isocal.py</code> on every push (and daily), the snake by its workflow on every push (and twice daily). They 404 only until the first run.</sub>
 
 <br>
 
