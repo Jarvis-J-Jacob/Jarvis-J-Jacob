@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 440" width="420" height="440" font-family="JetBrains Mono, monospace">
+<path d="M210.0,184.3 L240.9,237.8 L179.1,237.9 Z" fill="none" stroke="#7e22ce" stroke-opacity="0.15"/>
+<path d="M210.0,148.6 L271.8,255.7 L148.2,255.7 Z" fill="none" stroke="#7e22ce" stroke-opacity="0.15"/>
+<path d="M210.0,112.9 L302.8,273.5 L117.2,273.6 Z" fill="none" stroke="#7e22ce" stroke-opacity="0.15"/>
+<path d="M210.0,77.2 L333.7,291.4 L86.3,291.4 Z" fill="none" stroke="#7e22ce" stroke-opacity="0.15"/>
+<line x1="210.0" y1="220.0" x2="210.0" y2="77.2" stroke="#7e22ce" stroke-opacity="0.15"/>
+<line x1="210.0" y1="220.0" x2="333.7" y2="291.4" stroke="#7e22ce" stroke-opacity="0.15"/>
+<line x1="210.0" y1="220.0" x2="86.3" y2="291.4" stroke="#7e22ce" stroke-opacity="0.15"/>
+<path d="M210.0,141.5 L222.4,227.1 L185.3,234.3 Z" fill="#7e22ce" fill-opacity="0.25" stroke="#7e22ce" stroke-width="2"/>
+<circle cx="210.0" cy="141.5" r="3.5" fill="#7e22ce"/>
+<circle cx="222.4" cy="227.1" r="3.5" fill="#7e22ce"/>
+<circle cx="185.3" cy="234.3" r="3.5" fill="#7e22ce"/>
+<text x="210.0" y="45.8" fill="#1f2328" font-size="12" text-anchor="middle" dominant-baseline="middle">Python</text>
+<text x="360.9" y="307.1" fill="#1f2328" font-size="12" text-anchor="start" dominant-baseline="middle">DSA</text>
+<text x="59.1" y="307.1" fill="#1f2328" font-size="12" text-anchor="end" dominant-baseline="middle">C++</text>
+<text x="210.0" y="16" fill="#1f2328" font-size="14" font-weight="600" text-anchor="middle">Skill Radar</text>
+</svg>

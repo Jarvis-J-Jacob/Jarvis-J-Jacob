@@ -17,7 +17,7 @@
 
 <br>
 
-## log 001 — who's writing this
+## who's writing this
 
 Hi, I'm **Jarvis**. I'm a student at Newton School of Technology, S-VYASA campus, currently spending most of my time getting better at building things and understanding how they work underneath.
 
@@ -28,13 +28,13 @@ Hi, I'm **Jarvis**. I'm a student at Newton School of Technology, S-VYASA campus
 
 <sub>toolbox</sub>
 
-<img src="https://skillicons.dev/icons?i=cpp,python,js,react,nodejs,git,github,vscode,html,css&perline=10">
+<img src="https://skillicons.dev/icons?i=cpp,python,git,github,vscode&perline=10">
 
 <br>
 
-## log 002 — skill radar, two ways
+## skill radar, two ways
 
-One I rated myself. The other is meant to count real repo bytes — right now it's honest about there not being any owned repos yet, since the coding so far has gone into other people's projects.
+One I rated myself. The other counts real language bytes across my public repos and redraws itself on a schedule.
 
 <table><tr>
 <td width="50%" align="center">
@@ -55,7 +55,7 @@ One I rated myself. The other is meant to count real repo bytes — right now it
 
 <br>
 
-## log 003 — the year, and a snake that ate it
+## the year, and a snake that ate it
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Jarvis-J-Jacob/Jarvis-J-Jacob/output/snake-dark.svg">
@@ -69,11 +69,11 @@ One I rated myself. The other is meant to count real repo bytes — right now it
   <img src="assets/metrics.plugin.svg" width="100%" alt="isometric contribution calendar and language mix">
 </picture>
 
-<sub>the snake link 404s until the snake workflow has run once — expected on day one, not a bug.</sub>
+<sub>the snake and metrics panels 404 until their workflows have run once (metrics needs the <code>METRICS_TOKEN</code> secret) — expected on day one, not a bug.</sub>
 
 <br>
 
-## log 004 — stats, self-hosted so they don't 503
+## stats, self-hosted so they don't 503
 
 This tracks activity, not ownership — so it's accurate even before there's a single repo of my own.
 
@@ -85,7 +85,7 @@ This tracks activity, not ownership — so it's accurate even before there's a s
 
 <br><br>
 
-## log 005 — first project, coming soon
+## first project, coming soon
 
 Nothing to show here yet — everything I've written so far has gone into other people's repos as pull requests, not my own. This section is reserved for the first thing I ship on my own, and it'll show up here automatically the day I do.
 

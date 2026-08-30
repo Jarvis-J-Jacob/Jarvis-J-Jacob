@@ -37,7 +37,7 @@ Tips from the guide, still true here:
   four of your actual repo names, and write a one-line pitch for each (not a
   commit-message description — a pitch).
 - **`README.md`** — search for `#your-latest-project` and the two placeholder
-  bullets under "log 001" and write your actual currently-building project and
+  bullets under "who's writing this" and write your actual currently-building project and
   fun fact. Also update the four `PROJECT_*` references in the table and card
   links to match whatever you put in `projects.json`.
 
