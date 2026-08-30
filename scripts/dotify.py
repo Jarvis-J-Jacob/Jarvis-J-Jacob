@@ -183,15 +183,21 @@ def render_reveal_svg(cells, cols, rows, color, monochrome_hex, cell_size, max_r
         f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {width} {height}" '
         f'width="{width}" height="{height}">'
     ]
-    row_order = range(rows) if reveal_dir == "down" else range(rows - 1, -1, -1)
+    row_order = list(range(rows)) if reveal_dir == "down" else list(range(rows - 1, -1, -1))
     delay_step = reveal_time / max(1, rows)
+
+    # CSS keyframes rather than SMIL: a renderer that ignores CSS animation
+    # (RSS readers, some previews) just shows the finished portrait instead of a
+    # blank frame, and browsers still play the row-by-row reveal.
+    delay_rules = "".join(f".r{i}{{animation-delay:{i * delay_step:.3f}s}}" for i in range(rows))
+    parts.append(
+        f'<style>@keyframes rv{{from{{opacity:0}}to{{opacity:1}}}}'
+        f'.rw{{animation:rv {reveal_fade:.2f}s ease-out both}}{delay_rules}</style>'
+    )
 
     for i, y in enumerate(row_order):
         row = cells[y]
-        delay = i * delay_step
-        parts.append(f'<g opacity="0">'
-                     f'<animate attributeName="opacity" from="0" to="1" '
-                     f'begin="{delay:.3f}s" dur="{reveal_fade}s" fill="freeze"/>')
+        parts.append(f'<g class="rw r{i}">')
         for x, (brightness, rgb, visible) in enumerate(row):
             if not visible:
                 continue
