@@ -17,7 +17,7 @@
 
 <br>
 
-## who's writing this
+## `~/` whoami
 
 Hi, I'm **Jarvis**. I'm a student at Newton School of Technology, S-VYASA campus, currently spending most of my time getting better at building things and understanding how they work underneath.
 
@@ -26,13 +26,13 @@ Hi, I'm **Jarvis**. I'm a student at Newton School of Technology, S-VYASA campus
 - Learning **Contributing to OpenSource Projects**
 - Fun fact: **My Real name is truly Jarvis**
 
-<sub>toolbox</sub>
+## `~/` toolbox
 
 <img src="https://skillicons.dev/icons?i=cpp,python,git,github,vscode&perline=10">
 
 <br>
 
-## skill radar, two ways
+## `~/` skill radar
 
 One I rated myself. The other counts real language bytes across my public repos and redraws itself on a schedule.
 
@@ -55,7 +55,7 @@ One I rated myself. The other counts real language bytes across my public repos 
 
 <br>
 
-## the year, and a snake that ate it
+## `~/` contribution calendar
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/isocal-dark.svg">
@@ -75,7 +75,7 @@ One I rated myself. The other counts real language bytes across my public repos 
 
 <br>
 
-## stats, self-hosted so they don't 503
+## `~/` the numbers
 
 This tracks activity, not ownership — so it's accurate even before there's a single repo of my own.
 
@@ -87,7 +87,7 @@ This tracks activity, not ownership — so it's accurate even before there's a s
 
 <br><br>
 
-## first project, coming soon
+## `~/` first project
 
 Nothing to show here yet — everything I've written so far has gone into other people's repos as pull requests, not my own. This section is reserved for the first thing I ship on my own, and it'll show up here automatically the day I do.
 
