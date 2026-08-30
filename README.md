@@ -6,7 +6,7 @@
   <img src="assets/portrait.svg" width="220" alt="Jarvis Jeason Jacob">
 </picture>
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=26&duration=2600&pause=900&color=A855F7&center=true&vCenter=true&width=560&lines=Jarvis+Jeason+Jacob;Student+%40+Newton+School+of+Technology;S-VYASA+Campus" alt="typing banner">
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=26&duration=2600&pause=900&color=A855F7&center=true&vCenter=true&width=680&lines=Jarvis+Jeason+Jacob;Student+%40+Newton+School+of+Technology;S-VYASA+Campus" alt="typing banner">
 
 <a href="https://www.linkedin.com/in/jarvis-jeason-jacob-213124419/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"></a>
 <a href="https://codeforces.com/profile/3jz"><img src="https://img.shields.io/badge/Codeforces-1F8ACB?style=for-the-badge&logo=codeforces&logoColor=white"></a>
