@@ -5,8 +5,12 @@
 <text x="106.7" y="97.0" font-size="11" fill="#e6edf3" fill-opacity="0.75" text-anchor="middle">Public repos</text>
 <text x="320.0" y="77.0" font-size="22" font-weight="700" fill="#a855f7" text-anchor="middle">2</text>
 <text x="320.0" y="97.0" font-size="11" fill="#e6edf3" fill-opacity="0.75" text-anchor="middle">Followers</text>
-<text x="533.3" y="77.0" font-size="22" font-weight="700" fill="#a855f7" text-anchor="middle">0</text>
+<text x="533.3" y="77.0" font-size="22" font-weight="700" fill="#a855f7" text-anchor="middle">1</text>
 <text x="533.3" y="97.0" font-size="11" fill="#e6edf3" fill-opacity="0.75" text-anchor="middle">Total stars</text>
 <text x="106.7" y="157.0" font-size="22" font-weight="700" fill="#a855f7" text-anchor="middle">0</text>
 <text x="106.7" y="177.0" font-size="11" fill="#e6edf3" fill-opacity="0.75" text-anchor="middle">Total forks</text>
+<text x="320.0" y="157.0" font-size="22" font-weight="700" fill="#a855f7" text-anchor="middle">27</text>
+<text x="320.0" y="177.0" font-size="11" fill="#e6edf3" fill-opacity="0.75" text-anchor="middle">Contributions</text>
+<text x="533.3" y="157.0" font-size="22" font-weight="700" fill="#a855f7" text-anchor="middle">6d</text>
+<text x="533.3" y="177.0" font-size="11" fill="#e6edf3" fill-opacity="0.75" text-anchor="middle">Current streak</text>
 </svg>
