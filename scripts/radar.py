@@ -89,11 +89,29 @@ def load_axes_from_json(path):
 def load_axes_from_github(username, limit, exclude):
     totals = fetch_language_bytes(username, exclude)
     if not totals:
-        sys.exit("no language data returned — check the username or your rate limit")
+        # No owned repos yet (e.g. an account that's all open-source contributions).
+        # Don't fail the workflow — draw an honest placeholder instead.
+        return "Language Radar", [], None
     ranked = sorted(totals.items(), key=lambda kv: kv[1], reverse=True)[:limit]
     max_val = ranked[0][1]
     axes = [(name, count) for name, count in ranked]
     return "Language Radar", axes, max_val
+
+
+def draw_placeholder(title, accent, size=420):
+    """Shown when there's no owned-repo language data yet."""
+    parts = [f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {size} {size * 0.55:.0f}" '
+             f'width="{size}" height="{size * 0.55:.0f}" font-family="JetBrains Mono, monospace">']
+    parts.append(f'<rect x="1" y="1" width="{size-2}" height="{size*0.55-2:.0f}" rx="12" '
+                 f'fill="none" stroke="{accent}" stroke-opacity="0.35"/>')
+    parts.append(f'<text x="{size/2}" y="{size*0.24:.0f}" font-size="14" font-weight="600" '
+                 f'fill="currentColor" text-anchor="middle">{title}</text>')
+    parts.append(f'<text x="{size/2}" y="{size*0.4:.0f}" font-size="12" fill="currentColor" '
+                 f'fill-opacity="0.7" text-anchor="middle">no owned repos yet — this fills in</text>')
+    parts.append(f'<text x="{size/2}" y="{size*0.48:.0f}" font-size="12" fill="currentColor" '
+                 f'fill-opacity="0.7" text-anchor="middle">once code lives here instead of just PRs</text>')
+    parts.append("</svg>")
+    return "\n".join(parts)
 
 
 def draw_radar(title, axes, max_val, curve, show_values, accent, size=420):
@@ -171,10 +189,12 @@ def main():
         title = args.title
 
     if not axes:
-        sys.exit("no axes to draw")
-
-    dark_svg = draw_radar(title, axes, max_val, args.curve, args.values, ACCENT)
-    light_svg = draw_radar(title, axes, max_val, args.curve, args.values, ACCENT_LIGHT)
+        # e.g. --github mode with zero owned repos — draw a placeholder, don't fail the run.
+        dark_svg = draw_placeholder(title, ACCENT)
+        light_svg = draw_placeholder(title, ACCENT_LIGHT)
+    else:
+        dark_svg = draw_radar(title, axes, max_val, args.curve, args.values, ACCENT)
+        light_svg = draw_radar(title, axes, max_val, args.curve, args.values, ACCENT_LIGHT)
 
     out_prefix = Path(args.out)
     out_prefix.parent.mkdir(parents=True, exist_ok=True)

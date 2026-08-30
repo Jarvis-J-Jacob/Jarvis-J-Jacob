@@ -21,7 +21,7 @@
 
 Hi, I'm **Jarvis**. I'm a student at Newton School of Technology, S-VYASA campus, currently spending most of my time getting better at building things and understanding how they work underneath.
 
-- Currently building **[your latest project]()**
+- Not building anything public yet — right now my reps are open-source PRs, not my own repos
 - Competitive programming on **[Codeforces](https://codeforces.com/profile/3jz)**
 - Learning **Contributing to OpenSource Projects**
 - Fun fact: **My Real name is truly Jarvis**
@@ -34,7 +34,7 @@ Hi, I'm **Jarvis**. I'm a student at Newton School of Technology, S-VYASA campus
 
 ## log 002 — skill radar, two ways
 
-One I rated myself. One is counted straight from repo bytes and can't be argued with.
+One I rated myself. The other is meant to count real repo bytes — right now it's honest about there not being any owned repos yet, since the coding so far has gone into other people's projects.
 
 <table><tr>
 <td width="50%" align="center">
@@ -75,6 +75,8 @@ One I rated myself. One is counted straight from repo bytes and can't be argued 
 
 ## log 004 — stats, self-hosted so they don't 503
 
+This tracks activity, not ownership — so it's accurate even before there's a single repo of my own.
+
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/card-stats-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="assets/card-stats-light.svg">
@@ -83,58 +85,9 @@ One I rated myself. One is counted straight from repo bytes and can't be argued 
 
 <br><br>
 
-## log 005 — four things worth a look
+## log 005 — first project, coming soon
 
-<table><tr>
-<td width="50%">
-  <a href="https://github.com/Jarvis-J-Jacob/PROJECT_ONE">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="assets/card-project_one-dark.svg">
-      <source media="(prefers-color-scheme: light)" srcset="assets/card-project_one-light.svg">
-      <img src="assets/card-project_one-dark.svg" width="420" alt="project one">
-    </picture>
-  </a>
-</td>
-<td width="50%">
-  <a href="https://github.com/Jarvis-J-Jacob/PROJECT_TWO">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="assets/card-project_two-dark.svg">
-      <source media="(prefers-color-scheme: light)" srcset="assets/card-project_two-light.svg">
-      <img src="assets/card-project_two-dark.svg" width="420" alt="project two">
-    </picture>
-  </a>
-</td>
-</tr><tr>
-<td width="50%">
-  <a href="https://github.com/Jarvis-J-Jacob/PROJECT_THREE">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="assets/card-project_three-dark.svg">
-      <source media="(prefers-color-scheme: light)" srcset="assets/card-project_three-light.svg">
-      <img src="assets/card-project_three-dark.svg" width="420" alt="project three">
-    </picture>
-  </a>
-</td>
-<td width="50%">
-  <a href="https://github.com/Jarvis-J-Jacob/PROJECT_FOUR">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="assets/card-project_four-dark.svg">
-      <source media="(prefers-color-scheme: light)" srcset="assets/card-project_four-light.svg">
-      <img src="assets/card-project_four-dark.svg" width="420" alt="project four">
-    </picture>
-  </a>
-</td>
-</tr></table>
-
-<sub>
-
-| Project | Stack | Link |
-|---|---|---|
-| PROJECT_ONE | — | [repo](https://github.com/Jarvis-J-Jacob/PROJECT_ONE) |
-| PROJECT_TWO | — | [repo](https://github.com/Jarvis-J-Jacob/PROJECT_TWO) |
-| PROJECT_THREE | — | [repo](https://github.com/Jarvis-J-Jacob/PROJECT_THREE) |
-| PROJECT_FOUR | — | [repo](https://github.com/Jarvis-J-Jacob/PROJECT_FOUR) |
-
-</sub>
+Nothing to show here yet — everything I've written so far has gone into other people's repos as pull requests, not my own. This section is reserved for the first thing I ship on my own, and it'll show up here automatically the day I do.
 
 <br>
 
