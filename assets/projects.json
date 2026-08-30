@@ -1,0 +1,8 @@
+{
+  "projects": [
+    { "repo": "PROJECT_ONE", "description": "One-line pitch for your first project, written like you'd say it out loud." },
+    { "repo": "PROJECT_TWO", "description": "One-line pitch for your second project." },
+    { "repo": "PROJECT_THREE", "description": "One-line pitch for your third project." },
+    { "repo": "PROJECT_FOUR", "description": "One-line pitch for your fourth project." }
+  ]
+}

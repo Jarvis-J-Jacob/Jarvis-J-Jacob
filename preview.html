@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>profile preview</title>
+<style>
+  body { font-family: 'JetBrains Mono', monospace; background: #0d1117; color: #e6edf3; margin: 0; padding: 32px; }
+  h1 { font-size: 18px; margin-bottom: 4px; }
+  p.sub { color: #8b949e; margin-top: 0; margin-bottom: 32px; }
+  .row { display: flex; gap: 20px; margin-bottom: 40px; flex-wrap: wrap; }
+  .card { border-radius: 12px; padding: 20px; flex: 1; min-width: 300px; }
+  .card.dark { background: #0d1117; border: 1px solid #30363d; }
+  .card.light { background: #ffffff; border: 1px solid #d0d7de; }
+  .card.light img, .card.light object { filter: none; }
+  .label { font-size: 11px; text-transform: uppercase; letter-spacing: 0.05em; opacity: 0.6; margin-bottom: 10px; }
+  img, object { max-width: 100%; height: auto; display: block; }
+  button { background: #a855f7; color: white; border: none; padding: 6px 14px; border-radius: 6px;
+           font-family: inherit; cursor: pointer; margin-top: 8px; }
+  .section { margin-bottom: 48px; }
+  .section h2 { border-bottom: 1px solid #30363d; padding-bottom: 8px; }
+</style>
+</head>
+<body>
+
+<h1>profile preview</h1>
+<p class="sub">every generated asset, shown on a dark card and a light card, exactly like GitHub renders them. reload after regenerating.</p>
+
+<div class="section">
+  <h2>portrait</h2>
+  <div class="row">
+    <div class="card dark"><div class="label">dark</div><img id="portrait-dark" src="assets/portrait.svg"></div>
+    <div class="card light"><div class="label">light</div><img id="portrait-light" src="assets/portrait.svg"></div>
+  </div>
+  <button onclick="reloadAll()">replay the load-in</button>
+</div>
+
+<div class="section">
+  <h2>skill radar (self-rated)</h2>
+  <div class="row">
+    <div class="card dark"><div class="label">dark</div><img src="assets/radar-dark.svg"></div>
+    <div class="card light"><div class="label">light</div><img src="assets/radar-light.svg"></div>
+  </div>
+</div>
+
+<div class="section">
+  <h2>language radar (live)</h2>
+  <div class="row">
+    <div class="card dark"><div class="label">dark</div><img src="assets/radar-langs-dark.svg"></div>
+    <div class="card light"><div class="label">light</div><img src="assets/radar-langs-light.svg"></div>
+  </div>
+</div>
+
+<div class="section">
+  <h2>stat card</h2>
+  <div class="row">
+    <div class="card dark"><div class="label">dark</div><img src="assets/card-stats-dark.svg"></div>
+    <div class="card light"><div class="label">light</div><img src="assets/card-stats-light.svg"></div>
+  </div>
+</div>
+
+<div class="section">
+  <h2>project cards</h2>
+  <div class="row">
+    <div class="card dark"><div class="label">dark — project one</div><img src="assets/card-project_one-dark.svg"></div>
+    <div class="card light"><div class="label">light — project one</div><img src="assets/card-project_one-light.svg"></div>
+  </div>
+</div>
+
+<script>
+function reloadAll() {
+  document.querySelectorAll('img').forEach(img => {
+    const src = img.src.split('?')[0];
+    img.src = src + '?t=' + Date.now();
+  });
+}
+</script>
+
+</body>
+</html>

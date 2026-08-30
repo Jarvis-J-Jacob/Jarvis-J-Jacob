@@ -1,0 +1,17 @@
+{
+  "title": "Skill Radar",
+  "axes": [
+    {
+      "label": "Python",
+      "value": 55
+    },
+    {
+      "label": "DSA",
+      "value": 10
+    },
+    {
+      "label": "C++",
+      "value": 20
+    }
+  ]
+}
