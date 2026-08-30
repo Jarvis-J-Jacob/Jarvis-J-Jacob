@@ -65,9 +65,10 @@ git remote add origin https://github.com/Jarvis-J-Jacob/Jarvis-J-Jacob.git
 git push -u origin main
 ```
 
-Then: Actions tab → enable workflows on the banner → run each of the three
-(`metrics`, `snake`, `charts-and-cards`) once by hand via "Run workflow." First
-runs take a couple of minutes. After that they run themselves on schedule.
+Then: Actions tab → enable workflows on the banner. `snake` runs itself on this
+first push; `metrics` and `charts-and-cards` you run once by hand via "Run
+workflow" (metrics needs `METRICS_TOKEN` set first). First runs take a couple of
+minutes. After that they all run themselves on schedule.
 
 ## Checklist
 

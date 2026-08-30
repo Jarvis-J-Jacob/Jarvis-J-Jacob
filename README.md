@@ -69,7 +69,7 @@ One I rated myself. The other counts real language bytes across my public repos 
   <img src="assets/metrics.plugin.svg" width="100%" alt="isometric contribution calendar and language mix">
 </picture>
 
-<sub>the snake and metrics panels 404 until their workflows have run once (metrics needs the <code>METRICS_TOKEN</code> secret) — expected on day one, not a bug.</sub>
+<sub>the snake builds itself on every push to <code>main</code> (and twice daily); the metrics panel needs the <code>METRICS_TOKEN</code> secret before its workflow can run. Both 404 until then — expected on day one, not a bug.</sub>
 
 <br>
 
