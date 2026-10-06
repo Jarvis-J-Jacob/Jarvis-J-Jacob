@@ -89,6 +89,8 @@ This tracks activity, not ownership — so it's accurate even before there's a s
 
 ## `~/` selected contributions
 
+<div align="center">
+
 | Project | ★ | Status |
 |---|--:|---|
 | [TheAlgorithms/Python](https://github.com/TheAlgorithms/Python/pulls?q=is%3Apr+author%3AJarvis-J-Jacob) | 225k | ✅ Merged |
@@ -97,6 +99,8 @@ This tracks activity, not ownership — so it's accurate even before there's a s
 | [open-build-service](https://github.com/openSUSE/open-build-service/pulls?q=is%3Apr+author%3AJarvis-J-Jacob) | 1.1k | 🔄 In review |
 | [DevForge](https://github.com/NST-DEVFORGE/DevForge/pulls?q=is%3Apr+author%3AJarvis-J-Jacob) | 17 | ✅ Merged |
 | [cluster](https://github.com/blokkaDev/cluster/pulls?q=is%3Apr+author%3AJarvis-J-Jacob) | 5 | ✅ Merged |
+
+</div>
 
 <br>
 
