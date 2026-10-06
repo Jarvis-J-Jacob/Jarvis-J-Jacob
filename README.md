@@ -92,7 +92,7 @@ This tracks activity, not ownership — so it's accurate even before there's a s
 | Project | ★ | Status |
 |---|--:|---|
 | [TheAlgorithms/Python](https://github.com/TheAlgorithms/Python/pulls?q=is%3Apr+author%3AJarvis-J-Jacob) | 225k | ✅ Merged |
-| [graphify](https://github.com/Graphify-Labs/graphify/pulls?q=is%3Apr+author%3AJarvis-J-Jacob) | 124k | 🍒 Cherry-picked |
+| [graphify](https://github.com/Graphify-Labs/graphify/pulls?q=is%3Apr+author%3AJarvis-J-Jacob) | 124k | ✅ Merged (cherry-picked) |
 | [career-ops](https://github.com/career-ops-hq/career-ops/pulls?q=is%3Apr+author%3AJarvis-J-Jacob) | 74k | 🔄 In review |
 | [open-build-service](https://github.com/openSUSE/open-build-service/pulls?q=is%3Apr+author%3AJarvis-J-Jacob) | 1.1k | 🔄 In review |
 | [DevForge](https://github.com/NST-DEVFORGE/DevForge/pulls?q=is%3Apr+author%3AJarvis-J-Jacob) | 17 | ✅ Merged |
