@@ -89,20 +89,14 @@ This tracks activity, not ownership — so it's accurate even before there's a s
 
 ## `~/` selected contributions
 
-Merged pull requests in other people's repos. Every link goes to the PR.
-
-| Project | What I shipped |
-|---|---|
-| **[blokkaDev/cluster](https://github.com/blokkaDev/cluster)** ★5<br><sub>lightweight cluster system, Python CLI</sub> | 7 merged PRs: [colored CLI output](https://github.com/blokkaDev/cluster/pull/15), a [`version` command](https://github.com/blokkaDev/cluster/pull/17), [config validation](https://github.com/blokkaDev/cluster/pull/20), [CLI tests](https://github.com/blokkaDev/cluster/pull/18), [clearer errors when the Manager is unreachable](https://github.com/blokkaDev/cluster/pull/19), a fix for a [duplicate `POST /connect/{worker_id}` request](https://github.com/blokkaDev/cluster/pull/14), and [review follow-ups](https://github.com/blokkaDev/cluster/pull/16) |
-| **[pradipNP/khelzon](https://github.com/pradipNP/khelzon)** ★1<br><sub>browser arcade, HTML/CSS/JS</sub> | [Request-a-Game form in the footer](https://github.com/pradipNP/khelzon/pull/45), [PNG app icons for the PWA manifest](https://github.com/pradipNP/khelzon/pull/44), [labels on the header toolbar buttons](https://github.com/pradipNP/khelzon/pull/13) |
-| **[NST-DEVFORGE/DevForge](https://github.com/NST-DEVFORGE/DevForge)** ★17 | [`next/image` for the navbar logo](https://github.com/NST-DEVFORGE/DevForge/pull/164) |
-| **[dhhhhruv/campuskart](https://github.com/dhhhhruv/campuskart)**<br><sub>Flask student marketplace</sub> | [Fixed the newsletter success flag being set unconditionally](https://github.com/dhhhhruv/campuskart/pull/128) |
-| **[michaelegner/architecture-intelligence-platform](https://github.com/michaelegner/architecture-intelligence-platform)** ★7 | [Worked `curl` example for the A5 blast-radius docs](https://github.com/michaelegner/architecture-intelligence-platform/pull/43) |
-| **[TheAlgorithms/Python](https://github.com/TheAlgorithms/Python)** ★225k | Docstrings for [`prompt()`](https://github.com/TheAlgorithms/Python/pull/15092) and [`build_tree()`](https://github.com/TheAlgorithms/Python/pull/15091) |
-
-**In review right now:** [career-ops docs](https://github.com/career-ops-hq/career-ops/pull/4809) · [open-build-service: fix a 500 in `public#binary_packages`](https://github.com/openSUSE/open-build-service/pulls?q=author%3AJarvis-J-Jacob) · [career-centre](https://github.com/HopLittleBunny/career-centre/pulls?q=author%3AJarvis-J-Jacob) (docs, test and fixture PRs)
-
-<sub>first steps: [first-contributions](https://github.com/firstcontributions/first-contributions/pull/123910) · [our-dev-wall](https://github.com/ssagar1999/our-dev-wall/pull/7)</sub>
+| Project | ★ | Status |
+|---|--:|---|
+| [TheAlgorithms/Python](https://github.com/TheAlgorithms/Python/pulls?q=is%3Apr+author%3AJarvis-J-Jacob) | 225k | ✅ Merged |
+| [graphify](https://github.com/Graphify-Labs/graphify/pulls?q=is%3Apr+author%3AJarvis-J-Jacob) | 124k | 🍒 Cherry-picked |
+| [career-ops](https://github.com/career-ops-hq/career-ops/pulls?q=is%3Apr+author%3AJarvis-J-Jacob) | 74k | 🔄 In review |
+| [open-build-service](https://github.com/openSUSE/open-build-service/pulls?q=is%3Apr+author%3AJarvis-J-Jacob) | 1.1k | 🔄 In review |
+| [DevForge](https://github.com/NST-DEVFORGE/DevForge/pulls?q=is%3Apr+author%3AJarvis-J-Jacob) | 17 | ✅ Merged |
+| [cluster](https://github.com/blokkaDev/cluster/pulls?q=is%3Apr+author%3AJarvis-J-Jacob) | 5 | ✅ Merged |
 
 <br>
 
