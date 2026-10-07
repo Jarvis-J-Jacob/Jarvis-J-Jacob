@@ -87,24 +87,6 @@ This tracks activity, not ownership — so it's accurate even before there's a s
 
 <br><br>
 
-## `~/` selected contributions
-
-<div align="center">
-
-| Project | ★ | Status |
-|---|--:|---|
-| [TheAlgorithms/Python](https://github.com/TheAlgorithms/Python/pulls?q=is%3Apr+author%3AJarvis-J-Jacob) | 225k | ✅ Merged |
-| [graphify](https://github.com/Graphify-Labs/graphify/pulls?q=is%3Apr+author%3AJarvis-J-Jacob) | 124k | ✅ Merged (cherry-picked) |
-| [career-ops](https://github.com/career-ops-hq/career-ops/pulls?q=is%3Apr+author%3AJarvis-J-Jacob) | 74k | 🔄 In review |
-| [SymPy](https://github.com/sympy/sympy/pulls?q=is%3Apr+author%3AJarvis-J-Jacob) | 15k | ✅ Merged |
-| [open-build-service](https://github.com/openSUSE/open-build-service/pulls?q=is%3Apr+author%3AJarvis-J-Jacob) | 1.1k | 🔄 In review |
-| [DevForge](https://github.com/NST-DEVFORGE/DevForge/pulls?q=is%3Apr+author%3AJarvis-J-Jacob) | 17 | ✅ Merged |
-| [cluster](https://github.com/blokkaDev/cluster/pulls?q=is%3Apr+author%3AJarvis-J-Jacob) | 5 | ✅ Merged |
-
-</div>
-
-<br>
-
 ## `~/` first project
 
 Nothing to show here yet — everything I've written so far has gone into other people's repos as pull requests, not my own. This section is reserved for the first thing I ship on my own, and it'll show up here automatically the day I do.
