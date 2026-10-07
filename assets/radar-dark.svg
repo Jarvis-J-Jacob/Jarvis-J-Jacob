@@ -6,8 +6,8 @@
 <line x1="210.0" y1="220.0" x2="210.0" y2="77.2" stroke="#a855f7" stroke-opacity="0.15"/>
 <line x1="210.0" y1="220.0" x2="333.7" y2="291.4" stroke="#a855f7" stroke-opacity="0.15"/>
 <line x1="210.0" y1="220.0" x2="86.3" y2="291.4" stroke="#a855f7" stroke-opacity="0.15"/>
-<path d="M210.0,141.5 L247.1,241.4 L154.3,252.1 Z" fill="#a855f7" fill-opacity="0.25" stroke="#a855f7" stroke-width="2"/>
-<circle cx="210.0" cy="141.5" r="3.5" fill="#a855f7"/>
+<path d="M210.0,122.9 L247.1,241.4 L154.3,252.1 Z" fill="#a855f7" fill-opacity="0.25" stroke="#a855f7" stroke-width="2"/>
+<circle cx="210.0" cy="122.9" r="3.5" fill="#a855f7"/>
 <circle cx="247.1" cy="241.4" r="3.5" fill="#a855f7"/>
 <circle cx="154.3" cy="252.1" r="3.5" fill="#a855f7"/>
 <text x="210.0" y="45.8" fill="#e6edf3" font-size="12" text-anchor="middle" dominant-baseline="middle">Python</text>
