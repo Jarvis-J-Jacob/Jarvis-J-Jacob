@@ -1,46 +1,40 @@
 <div align="center">
 
 <picture>
-  <img src="assets/portrait.svg" width="200" alt="Jarvis Jeason Jacob">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/portrait.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/portrait.svg">
+  <img src="assets/portrait.svg" width="220" alt="Jarvis Jeason Jacob">
 </picture>
 
-# Jarvis Jeason Jacob
-
-Student at Newton School of Technology (S-VYASA campus) · open-source contributor
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=26&duration=2600&pause=900&color=A855F7&center=true&vCenter=true&width=680&lines=Jarvis+Jeason+Jacob;Student+%40+Newton+School+of+Technology;S-VYASA+Campus" alt="typing banner">
 
 <a href="https://www.linkedin.com/in/jarvis-jeason-jacob-213124419/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"></a>
 <a href="https://codeforces.com/profile/3jz"><img src="https://img.shields.io/badge/Codeforces-1F8ACB?style=for-the-badge&logo=codeforces&logoColor=white"></a>
+
+<img src="https://komarev.com/ghpvc/?username=Jarvis-J-Jacob&color=a855f7&label=profile+views" alt="profile views">
 
 </div>
 
 <br>
 
-## About
+## `~/` whoami
 
-I'm a CS student who learns by reading real codebases and sending fixes upstream. Right now I'm working toward
-Google Summer of Code, focusing on a small number of projects rather than many.
+Hi, I'm **Jarvis**. I'm a student at Newton School of Technology, S-VYASA campus, currently spending most of my time getting better at building things and understanding how they work underneath.
 
-- Contributing to: **openSUSE / Open Build Service** (Ruby on Rails), plus tooling and test work in Python projects
-- Competitive programming on [Codeforces](https://codeforces.com/profile/3jz)
-- I disclose AI assistance wherever a project's policy asks for it, and I only submit code I can explain myself
+- Not building anything public yet — right now my reps are open-source PRs, not my own repos
+- Competitive programming on **[Codeforces](https://codeforces.com/profile/3jz)**
+- Learning **Contributing to OpenSource Projects**
+- Fun fact: **My Real name is truly Jarvis**
 
-## Selected contributions
+## `~/` toolbox
 
-<div align="center">
+<img src="https://skillicons.dev/icons?i=cpp,python,git,github,vscode&perline=10">
 
-| Project | ★ | What | Status |
-|---|--:|---|---|
-| [graphify](https://github.com/Graphify-Labs/graphify/pulls?q=is%3Apr+author%3AJarvis-J-Jacob) | 124k | Extraction tests (Zig, C#, Kotlin) | ✅ Shipped in v0.9.77 |
-| [open-build-service](https://github.com/openSUSE/open-build-service/pulls?q=is%3Apr+author%3AJarvis-J-Jacob) | 1.1k | Fix 500 in `public#binary_packages` for scmsync packages | 🔄 In review |
-| [career-ops](https://github.com/career-ops-hq/career-ops/pulls?q=is%3Apr+author%3AJarvis-J-Jacob) | 74k | Docs: path-resolver module | 🔄 In review |
-| [DevForge](https://github.com/NST-DEVFORGE/DevForge/pulls?q=is%3Apr+author%3AJarvis-J-Jacob) | 17 | `next/image` for navbar logo | ✅ Merged |
+<br>
 
-</div>
+## `~/` skill radar
 
-<!-- Re-add after verifying the links and merge status:
-     TheAlgorithms/Python, blokkaDev/cluster -->
-
-## Skills
+One I rated myself. The other counts real language bytes across my public repos and redraws itself on a schedule.
 
 <table><tr>
 <td width="50%" align="center">
@@ -54,18 +48,22 @@ Google Summer of Code, focusing on a small number of projects rather than many.
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/radar-langs-dark.svg">
     <source media="(prefers-color-scheme: light)" srcset="assets/radar-langs-light.svg">
-    <img src="assets/radar-langs-dark.svg" width="380" alt="language radar from repo bytes">
+    <img src="assets/radar-langs-dark.svg" width="380" alt="language radar, from real repo bytes">
   </picture>
 </td>
 </tr></table>
 
-## Activity
+<br>
+
+## `~/` contribution calendar
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/isocal-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="assets/isocal-light.svg">
-  <img src="assets/isocal-dark.svg" width="100%" alt="contribution calendar, last 12 months">
+  <img src="assets/isocal-dark.svg" width="100%" alt="isometric contribution calendar, last 12 months">
 </picture>
+
+<br><br>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Jarvis-J-Jacob/Jarvis-J-Jacob/output/snake-dark.svg">
@@ -73,6 +71,46 @@ Google Summer of Code, focusing on a small number of projects rather than many.
   <img src="https://raw.githubusercontent.com/Jarvis-J-Jacob/Jarvis-J-Jacob/output/snake-dark.svg" width="100%" alt="contribution snake">
 </picture>
 
+<sub>both self-drawn from GitHub's own data, no third-party server: the calendar by <code>scripts/isocal.py</code> on every push (and daily), the snake by its workflow on every push (and twice daily). They 404 only until the first run.</sub>
+
+<br>
+
+## `~/` the numbers
+
+This tracks activity, not ownership — so it's accurate even before there's a single repo of my own.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/card-stats-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/card-stats-light.svg">
+  <img src="assets/card-stats-dark.svg" width="640" alt="stat card">
+</picture>
+
+<br><br>
+
+## `~/` selected contributions
+
 <div align="center">
-<sub>The calendar and snake are generated from GitHub's own data by workflows in this repo.</sub>
+
+| Project | ★ | Status |
+|---|--:|---|
+| [TheAlgorithms/Python](https://github.com/TheAlgorithms/Python/pulls?q=is%3Apr+author%3AJarvis-J-Jacob) | 225k | ✅ Merged |
+| [graphify](https://github.com/Graphify-Labs/graphify/pulls?q=is%3Apr+author%3AJarvis-J-Jacob) | 124k | ✅ Merged (cherry-picked) |
+| [career-ops](https://github.com/career-ops-hq/career-ops/pulls?q=is%3Apr+author%3AJarvis-J-Jacob) | 74k | 🔄 In review |
+| [SymPy](https://github.com/sympy/sympy/pulls?q=is%3Apr+author%3AJarvis-J-Jacob) | 15k | ✅ Merged |
+| [open-build-service](https://github.com/openSUSE/open-build-service/pulls?q=is%3Apr+author%3AJarvis-J-Jacob) | 1.1k | 🔄 In review |
+| [DevForge](https://github.com/NST-DEVFORGE/DevForge/pulls?q=is%3Apr+author%3AJarvis-J-Jacob) | 17 | ✅ Merged |
+| [cluster](https://github.com/blokkaDev/cluster/pulls?q=is%3Apr+author%3AJarvis-J-Jacob) | 5 | ✅ Merged |
+
+</div>
+
+<br>
+
+## `~/` first project
+
+Nothing to show here yet — everything I've written so far has gone into other people's repos as pull requests, not my own. This section is reserved for the first thing I ship on my own, and it'll show up here automatically the day I do.
+
+<br>
+
+<div align="center">
+<sub>everything above regenerates itself on a schedule — nothing here is hand-updated</sub>
 </div>
