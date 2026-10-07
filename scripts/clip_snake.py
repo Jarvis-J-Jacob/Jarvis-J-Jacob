@@ -52,8 +52,9 @@ def main():
     for path in sys.argv[1:]:
         with open(path, encoding="utf-8") as f:
             original = f.read()
+        clipped = clip(original)  # compute first so a failure never truncates the file
         with open(path, "w", encoding="utf-8") as f:
-            f.write(clip(original))
+            f.write(clipped)
         print(f"clipped {path}")
 
 

@@ -35,7 +35,10 @@ jobs:
       # snk lets the snake wander outside the grid while it plans its route;
       # clip it to the grid area so no blocks float outside the grid lines
       - name: Keep the snake inside the grid
-        run: python3 scripts/clip_snake.py dist/snake-dark.svg dist/snake-light.svg
+        run: |
+          # the snk container writes dist/ as root; take ownership so it can be edited
+          sudo chown -R "$USER" dist
+          python3 scripts/clip_snake.py dist/snake-dark.svg dist/snake-light.svg
 
       - name: Publish to the output branch
         uses: crazy-max/ghaction-github-pages@v4
