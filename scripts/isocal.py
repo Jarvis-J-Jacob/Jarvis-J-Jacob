@@ -30,7 +30,8 @@ ACCENT_LIGHT = "#7e22ce"
 RAMP_DARK = ["#241b33", "#452c6b", "#6d3fb0", "#9a63e8", "#c9a4ff"]
 RAMP_LIGHT = ["#efeafb", "#cdb6ef", "#a67fe0", "#7f4bcf", "#5a2ca6"]
 
-TILE = 12          # half-width of a tile diamond in the isometric projection
+WEEK_STEP = (13, 4)    # screen offset of one week: right, slightly down
+DAY_STEP = (-9, 7)     # screen offset of one weekday: toward the viewer, down and left
 BASE_RISE = 3      # how tall a zero-contribution day stands
 MAX_RISE = 34      # extra height at the busiest day
 
@@ -115,13 +116,16 @@ def draw(username, total, weeks, ramp, text_color, accent):
     cur_streak, best_streak = streaks(days)
     busiest = max((d["contributionCount"] for d in days), default=0)
 
-    n_weeks = len(weeks)
-    ox = 40 + 6 * TILE          # shift right to make room for the r=6 overhang
-    oy = 116
+    # Everything is drawn in "local" coordinates with the back corner of the first
+    # tile at (0, 0); the group is translated into place once the extents are known,
+    # so nothing can fall outside the image no matter how the data looks.
+    ux, uy = WEEK_STEP      # one week to the right (and slightly down)
+    vx, vy = DAY_STEP       # one weekday toward the viewer (down and to the left)
 
-    cells = []  # (depth, svg)
-    month_labels = []
+    cells = []  # (depth, column, svg)
+    label_pts = []          # (x, y, text) in local coordinates
     last_month = None
+    xs, ys = [], []         # extents of everything drawn
 
     for c, week in enumerate(weeks):
         for d in week["contributionDays"]:
@@ -130,49 +134,55 @@ def draw(username, total, weeks, ramp, text_color, accent):
             lvl = level_for(count, ceiling)
             h = BASE_RISE + (0 if not count else (min(count, ceiling) / ceiling) ** 0.6 * MAX_RISE)
 
-            gx = ox + (c - r) * TILE
-            gy = oy + (c + r) * TILE * 0.5
+            px = c * ux + r * vx            # back corner of this tile
+            py = c * uy + r * vy
+            ground = [(px, py), (px + ux, py + uy),
+                      (px + ux + vx, py + uy + vy), (px + vx, py + vy)]   # back, right, front, left
 
             top = ramp[lvl]
             left = shade(top, 0.62)
             right = shade(top, 0.82)
 
-            # ground diamond points, then the same raised by h
-            def dia(yoff):
-                return (f"{gx:.1f},{gy - yoff:.1f} "
-                        f"{gx + TILE:.1f},{gy + TILE * 0.5 - yoff:.1f} "
-                        f"{gx:.1f},{gy + TILE - yoff:.1f} "
-                        f"{gx - TILE:.1f},{gy + TILE * 0.5 - yoff:.1f}")
+            def pts(points, lift=0.0):
+                return " ".join(f"{x:.1f},{y - lift:.1f}" for x, y in points)
 
+            back, rgt, front, lft = ground
             svg = (
-                f'<polygon points="{gx - TILE:.1f},{gy + TILE * 0.5 - h:.1f} '
-                f'{gx:.1f},{gy + TILE - h:.1f} {gx:.1f},{gy + TILE:.1f} '
-                f'{gx - TILE:.1f},{gy + TILE * 0.5:.1f}" fill="{left}"/>'
-                f'<polygon points="{gx:.1f},{gy + TILE - h:.1f} '
-                f'{gx + TILE:.1f},{gy + TILE * 0.5 - h:.1f} {gx + TILE:.1f},{gy + TILE * 0.5:.1f} '
-                f'{gx:.1f},{gy + TILE:.1f}" fill="{right}"/>'
-                f'<polygon points="{dia(h)}" fill="{top}"/>'
+                f'<polygon points="{pts([lft, front], h)} {pts([front, lft])}" fill="{left}"/>'
+                f'<polygon points="{pts([front, rgt], h)} {pts([rgt, front])}" fill="{right}"/>'
+                f'<polygon points="{pts(ground, h)}" fill="{top}"/>'
             )
-            cells.append((c + r, gx, svg))
+            cells.append((c + r, c, svg))
+            for x, y in ground:
+                xs.append(x)
+                ys.append(y - h)
+                ys.append(y)
 
-            # month label when a new month first appears (near the top row)
             iso_day = date.fromisoformat(d["date"])
-            if r == 0:
-                if last_month != iso_day.month and iso_day.day <= 7:
-                    lx = ox + (c - 0) * TILE
-                    ly = oy + c * TILE * 0.5 - 20
-                    month_labels.append(
-                        f'<text x="{lx:.1f}" y="{ly:.1f}" fill="{text_color}" fill-opacity="0.65" '
-                        f'font-size="10" text-anchor="middle">{MONTHS[iso_day.month - 1]}</text>')
-                    last_month = iso_day.month
+            if r == 0 and last_month != iso_day.month and iso_day.day <= 7:
+                label_pts.append((px, py, MONTHS[iso_day.month - 1]))
+                last_month = iso_day.month
 
     cells.sort(key=lambda t: (t[0], t[1]))
     body = "\n".join(s for _, _, s in cells)
 
-    width = ox + (n_weeks - 1) * TILE + TILE + 40
-    height = oy + (n_weeks - 1 + 6) * TILE * 0.5 + TILE + 46
+    # Month labels sit above the tallest building that could ever stand on their
+    # column, so a building can never cover the text.
+    lift = BASE_RISE + MAX_RISE + 10
+    labels = []
+    for px, py, name in label_pts:
+        labels.append(f'<text x="{px:.1f}" y="{py - lift:.1f}" fill="{text_color}" '
+                      f'fill-opacity="0.65" font-size="10" text-anchor="middle">{name}</text>')
+        ys.append(py - lift - 10)
+        xs.extend([px - 14, px + 14])
 
-    # legend
+    margin_x, header_h, legend_h = 40, 100, 46
+    tx = margin_x - min(xs)
+    ty = header_h - min(ys)
+    width = max(xs) + tx + margin_x
+    height = max(ys) + ty + legend_h
+
+    # legend, bottom right
     lg_x = width - 200
     lg_y = height - 26
     legend = [f'<text x="{lg_x - 8:.0f}" y="{lg_y + 4:.0f}" fill="{text_color}" fill-opacity="0.6" '
@@ -184,18 +194,19 @@ def draw(username, total, weeks, ramp, text_color, accent):
                   f'fill-opacity="0.6" font-size="10">more</text>')
 
     stat = (f'<text x="40" y="34" fill="{text_color}" font-size="15" font-weight="600">'
-            f'{username} — contributions, last year</text>'
+            f'{username} \u2014 contributions, last year</text>'
             f'<text x="40" y="62" fill="{accent}" font-size="24" font-weight="700">{total:,}</text>'
             f'<text x="40" y="80" fill="{text_color}" fill-opacity="0.65" font-size="10">'
             f'commits, PRs, issues &amp; reviews</text>'
             f'<text x="{width - 40:.0f}" y="34" fill="{text_color}" fill-opacity="0.75" font-size="11" '
-            f'text-anchor="end">current streak {cur_streak}d · longest {best_streak}d · '
+            f'text-anchor="end">current streak {cur_streak}d \u00b7 longest {best_streak}d \u00b7 '
             f'busiest day {busiest}</text>')
 
     return (
         f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {width:.0f} {height:.0f}" '
         f'width="{width:.0f}" height="{height:.0f}" font-family="JetBrains Mono, monospace">\n'
-        f'{stat}\n{body}\n{"".join(month_labels)}\n{"".join(legend)}\n</svg>'
+        f'{stat}\n<g transform="translate({tx:.1f},{ty:.1f})">\n{body}\n{"".join(labels)}\n</g>\n'
+        f'{"".join(legend)}\n</svg>'
     )
 
 
