@@ -21,7 +21,6 @@ I'm a CS student who learns by reading real codebases and sending fixes upstream
 Google Summer of Code, focusing on a small number of projects rather than many.
 
 - Contributing to: **openSUSE / Open Build Service** (Ruby on Rails), plus tooling and test work in Python projects
-- Languages: **Python**, **C++** (comfortable with ~800-rated Codeforces problems), plus whatever the issue needs (Ruby, JavaScript/TypeScript so far)
 - Competitive programming on [Codeforces](https://codeforces.com/profile/3jz)
 - I disclose AI assistance wherever a project's policy asks for it, and I only submit code I can explain myself
 
@@ -40,6 +39,25 @@ Google Summer of Code, focusing on a small number of projects rather than many.
 
 <!-- Re-add after verifying the links and merge status:
      TheAlgorithms/Python, blokkaDev/cluster -->
+
+## Skills
+
+<table><tr>
+<td width="50%" align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/radar-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="assets/radar-light.svg">
+    <img src="assets/radar-dark.svg" width="380" alt="self-rated skill radar">
+  </picture>
+</td>
+<td width="50%" align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/radar-langs-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="assets/radar-langs-light.svg">
+    <img src="assets/radar-langs-dark.svg" width="380" alt="language radar from repo bytes">
+  </picture>
+</td>
+</tr></table>
 
 ## Activity
 
