@@ -96,8 +96,7 @@ Team builds I co-developed. Both are hosted under a teammate's account.
 <td width="50%" valign="top">
 
 ### [Phantom](https://github.com/MassGethu/Phantom)
-**4th of 70 teams · Hacktoberfest 2026**
-<sub>NST Bengaluru at S-VYASA · 12-hour overnight build · team ULTRON</sub>
+**Hacktoberfest 2026** — 4th place out of 70 teams<br><sub>NST Bengaluru at S-VYASA. 12-hour overnight build with team ULTRON.</sub>
 
 A CLI that finds the setup steps a README forgets. It runs the README in a fresh Docker container, names what's missing, bisects history for the commit that broke setup, then patches the README and proves the fix works.
 
@@ -107,8 +106,7 @@ A CLI that finds the setup steps a README forgets. It runs the README in a fresh
 <td width="50%" valign="top">
 
 ### [Sabūt](https://github.com/MassGethu/Sabut)
-**Results pending · INNOVEX 2026**
-<sub>Smart Agriculture track · <a href="https://sabut.vercel.app/">live demo</a></sub>
+**INNOVEX 2026** — results pending<br><sub>Smart Agriculture track. <a href="https://sabut.vercel.app/">Live demo</a></sub>
 
 Uses Sentinel-1 satellite radar to help agriculture officers decide which rice-incentive claims need a field visit. Includes an auditable review queue and a farmer correction flow in Hindi and Punjabi.
 
