@@ -21,7 +21,7 @@
 
 Hi, I'm **Jarvis**. I'm a student at Newton School of Technology, S-VYASA campus, currently spending most of my time getting better at building things and understanding how they work underneath.
 
-- Not building anything public yet — right now my reps are open-source PRs, not my own repos
+- Building at hackathons with my team, and sending open-source PRs the rest of the time
 - Competitive programming on **[Codeforces](https://codeforces.com/profile/3jz)**
 - Learning **Contributing to OpenSource Projects**
 - Fun fact: **My Real name is truly Jarvis**
@@ -87,12 +87,39 @@ This tracks activity, not ownership — so it's accurate even before there's a s
 
 <br><br>
 
-## `~/` first project
+## `~/` hackathon projects
 
-Nothing to show here yet — everything I've written so far has gone into other people's repos as pull requests, not my own. This section is reserved for the first thing I ship on my own, and it'll show up here automatically the day I do.
+Team builds I co-developed. Both are hosted under a teammate's account.
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### [Phantom](https://github.com/MassGethu/Phantom)
+**🏆 4th of 70 teams · Hacktoberfest 2026**
+<sub>NST Bengaluru at S-VYASA · 12-hour overnight build · team ULTRON</sub>
+
+A CLI that finds the setup steps a README forgets. It runs the README in a fresh Docker container, names what's missing, bisects history for the commit that broke setup, then patches the README and proves the fix works.
+
+<img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"> <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white"> <img src="https://img.shields.io/badge/Ollama-000000?style=flat-square&logo=ollama&logoColor=white">
+
+</td>
+<td width="50%" valign="top">
+
+### [Sabūt](https://github.com/MassGethu/Sabut)
+**⏳ Results pending · INNOVEX 2026**
+<sub>Smart Agriculture track · <a href="https://sabut.vercel.app/">live demo</a></sub>
+
+Uses Sentinel-1 satellite radar to help agriculture officers decide which rice-incentive claims need a field visit. Includes an auditable review queue and a farmer correction flow in Hindi and Punjabi.
+
+<img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB"> <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white"> <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white"> <img src="https://img.shields.io/badge/Leaflet-199900?style=flat-square&logo=leaflet&logoColor=white">
+
+</td>
+</tr>
+</table>
 
 <br>
 
 <div align="center">
-<sub>everything above regenerates itself on a schedule — nothing here is hand-updated</sub>
+<sub>the charts and cards above regenerate themselves on a schedule</sub>
 </div>
